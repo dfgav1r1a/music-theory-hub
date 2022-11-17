@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Scales Generator</title>
+    
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Scales Generator</h1>
+        
+    </header>
+    <main>  
+        <div class="container">
+            <div class="input">
+                <h1>Major Scales</h1>
+
+                <form id="notes"> 
+                    <label for="pitches">Select a Key:</label>           
+                    <select class="keyList" id="pitches">
+                        <option>C</option>
+                        <option>D</option>
+                        <option>E</option>
+                        <option>F</option>
+                        <option>G</option>
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                    <button form="notes" type="button" id="generateBtn">Generate</button>                    
+                </form>
+            </div>
+            <div class="output">
+                <div class="innerOutput">
+                    <div class="scales" id="degrees">
+                      <p></p>  
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./scales.js" type="text/javascript" defer></script>    
+</body>
+</html>

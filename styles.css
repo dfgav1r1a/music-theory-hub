@@ -1,0 +1,61 @@
+body {
+    font-family: system-ui;
+    background: rgba(2, 22, 51, 0.705);
+    color: white;
+    text-align: center;
+}
+  
+.container {    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1em;
+    grid-template-areas: 
+        "input output";   
+}
+  
+.input { 
+    grid-area: input;       
+    background:pink;
+    border-radius: 3em;
+    width: auto;
+    height: auto;
+    color: black;
+}
+
+.output {
+    grid-area: output;
+    background: rgb(255, 245, 112);     
+    border-radius: 3em;
+    padding: 5vh;   
+}
+
+.innerOutput { 
+    color: black;
+    font-size: 1.5rem;   
+    background-color: aliceblue;               
+}
+
+p {
+    color: black;
+}
+  
+.keyList {
+    height: 2em;
+    border-radius: 50%;
+    font-family: system-ui;
+    font-size: 1em;
+}
+
+label {
+    color: black
+}
+
+button {
+    height: auto;
+    width: 5vw;
+    border-radius: 3em;
+    font-family: system-ui;
+    background-color: aliceblue;
+}
+
