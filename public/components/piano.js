@@ -7,7 +7,7 @@ const removeKeys = () => {
 };
 
 const generateKeys = (finalScale) => {
-    removeKeys()
+    removeKeys();
     const scaleArray = finalScale.split(' ');
     console.log(scaleArray);
     const piano = document.getElementById('piano');
@@ -16,7 +16,9 @@ const generateKeys = (finalScale) => {
                     key.className = 'note';
                     key.setAttribute('id', pitch);
                     key.innerHTML = pitch;
-                    piano.appendChild(key); 
+                    piano.appendChild(key).animate([{opacity: 0, visibility: 'hidden'},
+                                                    {opacity: 1, visibility: 'visible'}],
+                                                    {duration: 2000}); 
                 });
 } 
 

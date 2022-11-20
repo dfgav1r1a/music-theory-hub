@@ -59,9 +59,11 @@ button {
     background-color: aliceblue;
 }
 
+/*
 .piano {
     border: solid 5px;
 }
+*/
 
 .note {
   width: 5em;
@@ -71,6 +73,6 @@ button {
   background-color: aliceblue;
   color: black;
   vertical-align: middle; 
-  line-height: 5em 
+  line-height: 5em;
 }
 
