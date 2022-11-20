@@ -1,3 +1,5 @@
+import { generateKeys } from "./components/piano.js";
+
 //global variables
 const sharp = '#';
 const flat = 'b';
@@ -43,7 +45,7 @@ const majorScales = (pitch) => {
         for (let note of pitches) {
             scale.push(note);    
         }
-    return result();
+        return result();
     }   else if (pitch === pitches[1]) {
             for (let note of pitches) {
                 scale.push(note);    
@@ -112,15 +114,16 @@ function generate () {
     clear();   
     const scaleOutput = document.getElementById('degrees');
     scaleOutput.innerHTML = '';  
-    pitch = document.getElementById('pitches').value;    
+    pitch = document.getElementById('pitches').value;
     const finalScale = majorScales(pitch);
+    console.log(finalScale);
+    generateKeys(finalScale);    
     scaleOutput.innerHTML = `
         <p> The <b>${pitch}</b> major scale is: </p>
         <p> ${finalScale} </p>`;     
 }
 
-
-
+export {majorScales};
 
 
 
