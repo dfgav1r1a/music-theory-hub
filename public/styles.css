@@ -59,13 +59,17 @@ button {
     background-color: aliceblue;
 }
 
-/*
 .piano {
-    border: solid 5px;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1em;
+    align-items: center; 
 }
-*/
+
 
 .note {
+  margin: auto;  
   width: 5em;
   height: 5em;  
   border: 5px solid black;  
